@@ -1,6 +1,6 @@
 # diabetes_detection
 
-####ACCURACIES:
+#### ACCURACIES:
 SVM: 84.45%
 
 SVM-CSA: 89.0%
