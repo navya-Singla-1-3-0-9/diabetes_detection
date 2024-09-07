@@ -32,22 +32,28 @@ We have used the space selection phase of the bald eagle algorithm, after the cr
 **Step 2**: Each crow is evaluated according to the quality of its position, which is related to the desired objective function. Best position (Xbest) is calculated as the position giving maximum fitness (memory).
 
 **Step 3**: Crows create new locations inside the search space as follows: crow i selects one of the crows from the swarm randomly, i.g., crow j , and follows it to determine the location of food hidden by this crow, with the new location of crow i being generated as follows:
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/2ba9db72-b589-4f88-8a04-4d9b8a0829ee">
 
 Here, aj is a chaotic number
 This step assists in discovery of new search spaces(exploration)
 
 **Step 4**: Position & Memories of crows are updated based on selection step of bald eagle Search Optimization for each iteration as follows:
+
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/2ca64d09-ce0b-43b4-a51e-55aa4866b2fc">
 
 where α is the parameter for controlling the changes in position that takes a value between 1.5 and 2 and r is a random number that takes a value between 0 and 1. This step ensures selection of optimal search space till now. In this step, crows search around the best area.
 
 **Step 5**: Positions of crows are updated based on sine-cosine updated search-step of bald eagle optimization as follows:
+
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/d7635902-3c34-42ec-a5dc-bf4b86576f3f">
+
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/40a51ebe-fec1-4784-8a6e-1cd84f174120">
+
 Where r1 and r2 are random variables.
 
 **Step 6**: Update flight length through Sinusoidal Chaotic map.
+
 <img width="234" alt="image" src="https://github.com/user-attachments/assets/eead780d-9690-47a7-ab12-f56254a7c223">
 
 **Step 7**: Update memory matrix as best memory achieved till now for every point.
